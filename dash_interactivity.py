@@ -33,6 +33,7 @@ app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
                                             searchable=True),
                                 html.Br(),
 
+                  
                                 # TASK 2: Add a pie chart to show the total successful launches count for all sites
                                 # If a specific launch site was selected, show the Success vs. Failed counts for the site
                                 html.Div(dcc.Graph(id='success-pie-chart')),
@@ -91,3 +92,6 @@ def update_graph(site_dropdown, payload_slider):
 # Run the app
 if __name__ == '__main__':
     app.run_server()
+    
+    
+ ### For Dash Link: https://akkuthakur2-8050.theiadocker-2-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/
